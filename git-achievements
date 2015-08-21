@@ -195,7 +195,7 @@ function check_for_achievements
             count_unlock_achievement "Investigator" "Used git blame to annotate a file with information about how each line changed." "$command"
             ;;
         bundle )
-            count_unlock_achievement "Delivery Boy" "Move objects and refs by archive with git bundle." "$command"
+            count_unlock_achievement "Delivery Boy" "Moved objects and refs by archive with git bundle." "$command"
             ;;
         cherry-pick )
             unlock_achievement "Cherry Picker" "Used git cherry-pick to add a sha from another branch into the current branch." "$command"
@@ -208,7 +208,7 @@ function check_for_achievements
             esac
             ;;
         clean )
-            count_unlock_achievement "Cleaning lady" "Remove untracked files from the working tree with git clean" "$command"
+            count_unlock_achievement "Cleaning lady" "Removed untracked files from the working tree with git clean" "$command"
             ;;
         commit )
             count_unlock_achievement "Author" "Made 2^Level commits using git commit." "$command"
@@ -217,7 +217,7 @@ function check_for_achievements
             fi
             case $2 in
                 --amend )
-                count_unlock_achievement "Seamstress" "amended a commit with git commit --amend." "commit --amend"
+                count_unlock_achievement "Seamstress" "Amended a commit with git commit --amend." "commit --amend"
                 ;;
                 -s )
                 count_unlock_achievement "Locksmith" "Add Signed-off-by line at the end of the commit log message using git commit -s." "commit -s"
@@ -241,31 +241,31 @@ function check_for_achievements
 
             ;;
         fetch )
-            count_unlock_achievement "Collector" "Fetches named heads or tags from another repository with git fetch" "$command"
+            count_unlock_achievement "Collector" "Fetched named heads or tags from another repository with git fetch" "$command"
             ;;
         filter-branch )
-            count_unlock_achievement "Tree Trimmer" "Rewrite branches with git filter-branch" "$command"
+            count_unlock_achievement "Tree Trimmer" "Rewrote branches with git filter-branch" "$command"
             ;;
         format-patch )
-            count_unlock_achievement "Archivist" "Prepare each commit with its patch in one file per commit with git format-patch" "$command"
+            count_unlock_achievement "Archivist" "Prepared each commit with its patch in one file per commit with git format-patch" "$command"
             ;;
         gc )
             count_unlock_achievement "Chimney Sweeper" "Used git gc to run a number of housekeeping tasks on the current repository." "$command"
             ;;
         grep )
-            count_unlock_achievement "Fisherman" "Look for specified patterns in the current repository with git grep." "$command"
+            count_unlock_achievement "Fisherman" "Looked for specified patterns in the current repository with git grep." "$command"
             ;;
         imap-send )
-            count_unlock_achievement "Postman" "Send a collection of patches from stdin to an IMAP folder with git imap-send" "$command"
+            count_unlock_achievement "Postman" "Sent a collection of patches from stdin to an IMAP folder with git imap-send" "$command"
             ;;
         init )
             count_unlock_achievement "Architect" "Created a new repository with git init." "$command"
             ;;
         instaweb )
-            count_unlock_achievement "Web Designer" "Instantly browse your working repository in gitweb with git instaweb" "$command"
+            count_unlock_achievement "Web Designer" "Instantly browsed your working repository in gitweb with git instaweb" "$command"
             ;;
         log )
-            count_unlock_achievement "Historian" "Investigate the commit log using git log." "$command"
+            count_unlock_achievement "Historian" "Investigated the commit log using git log." "$command"
             case $2 in
                 -p* )
                 unlock_achievement "Dentist" "Extracted patches using git log -p."
@@ -276,7 +276,7 @@ function check_for_achievements
             esac
             ;;
         merge )
-            count_unlock_achievement "Banker" "Join two or more development histories together with git merge." "$command"
+            count_unlock_achievement "Banker" "Joined two or more development histories together with git merge." "$command"
             ;;
         push )
             case $2 in
@@ -284,7 +284,7 @@ function check_for_achievements
                 ;;
             * )
                 # not a dry run
-                count_unlock_achievement "Socialite" "pushed a branch to a remote repository using git push" "$command"
+                count_unlock_achievement "Socialite" "Pushed a branch to a remote repository using git push" "$command"
                 case $2 in
                     -f )
                     count_unlock_achievement "Thug" "Forced pushed a branch with git push -f" "push -f"
@@ -304,10 +304,10 @@ function check_for_achievements
             esac
             ;;
         reflog )
-            unlock_achievement "Weaver" "Investigate old branches by using git reflog"
+            unlock_achievement "Weaver" "Investigated old branches by using git reflog"
             case $2 in
                 --date=relative )
-                unlock_achievement "Stamp Collector" "Investigate old branches by using git reflog --date=relative"
+                unlock_achievement "Stamp Collector" "Investigated old branches by using git reflog --date=relative"
                 ;;
             esac
             ;;
@@ -322,13 +322,13 @@ function check_for_achievements
             unlock_achievement "Beach Lion" "Restricted login shell for GIT-only SSH access with git shell"
             ;;
         show )
-            count_unlock_achievement "Presenter" "Shows one or more objects (blobs, trees, tags and commits) with git show" "$command"
+            count_unlock_achievement "Presenter" "Showed one or more objects (blobs, trees, tags and commits) with git show" "$command"
             ;;
         show-branch )
-            count_unlock_achievement "Gardner" "Shows the commit ancestry graph with git show-branch" "$command"
+            count_unlock_achievement "Gardner" "Showed the commit ancestry graph with git show-branch" "$command"
             ;;
         stash )
-            count_unlock_achievement "Product Manager" "Stash the changes in a dirty working directory away with git stash." "$command"
+            count_unlock_achievement "Product Manager" "Stashed the changes in a dirty working directory away with git stash." "$command"
             ;;
         submodule )
             case $2 in
@@ -347,13 +347,13 @@ function check_for_achievements
             count_unlock_achievement "Gipsy" "Create, list, delete a tag signed with GPG using git tag" "$command"
             ;;
         whatchanged )
-            count_unlock_achievement "News Reader" "Show logs with difference each commit introduces with git whatchanged" "$command"
+            count_unlock_achievement "News Reader" "Showed logs with difference each commit introduces with git whatchanged" "$command"
             ;;
         flow )
-            count_unlock_achievement "Pedantic" "Use the flow extension to encourage an orderly and standardized branching model" "$command"
+            count_unlock_achievement "Pedantic" "Used the flow extension to encourage an orderly and standardized branching model" "$command"
             ;;
         hash-object|update-index|commit-tree|update-ref )
-            count_unlock_achievement "Plumber" "Use the internal plumbing commands of git." "$command"
+            count_unlock_achievement "Plumber" "Used the internal plumbing commands of git." "$command"
             ;;
     esac
 }
