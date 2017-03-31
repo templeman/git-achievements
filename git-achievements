@@ -478,7 +478,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
         message="New achievement $1"
     fi
     git commit -qm "${message}"
-    git push origin gh-pages
+    git push test gh-pages
 }
 
 ACTIONLOGFILE="$HOME/.git-achievements-action.log"
